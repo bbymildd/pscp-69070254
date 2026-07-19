@@ -21,19 +21,19 @@ OJ3031 - Ink
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+560122
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+1-3 hours
 ```
 
 เลือกหนึ่งข้อ:
@@ -82,7 +82,7 @@ Output:
 แสดงค่าจำนวนเต็มวินาทีที่หมึกจะท่วมแต่ละพิกัด
 
 Constraints:
-
+ใส่เลขในตัวแปรรับค่าพื้นที่และจำนวนคนได้เพียงจำนวนเต็มบวกถึงจะคำนวณถูกต้อง
 ```
 
 ---
@@ -126,7 +126,7 @@ Step 5: แสดงผล
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกัน เพราะเป็นวิธีที่คิดออกและแสดงผลตรงกับโจทย์ต้องการ
 ```
 
 ---
@@ -146,31 +146,41 @@ Step 5: แสดงผล
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะหารไม่ลงตัวและพิกัดQ1
 ```
 
 Input:
 
 ```text
-
+50 4
+0 1
+0 2
+0 3
+0 4
 ```
 
 Expected output:
 
 ```text
-
+1
+1
+1
+2
 ```
 
 Actual output:
 
 ```text
-
+1
+1
+1
+2
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -178,31 +188,41 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะลองพิกัดเป็นลบตัวใดตัวนึง
 ```
 
 Input:
 
 ```text
-
+50 4
+1 -2
+3 -4
+-5 6
+-7 8
 ```
 
 Expected output:
 
 ```text
-
+1
+2
+4
+8
 ```
 
 Actual output:
 
 ```text
-
+1
+2
+4
+8
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -210,31 +230,38 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะต้องการลองพิกัดเป็นลบ
 ```
 
 Input:
 
 ```text
-
+30 3
+-1 -1
+-2 -2
+-3 -3
 ```
 
 Expected output:
 
 ```text
-
+1
+1
+2
 ```
 
 Actual output:
 
 ```text
-
+1
+1
+2
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -244,7 +271,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+Yes
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -262,7 +289,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -287,19 +314,19 @@ Yes / No
 ใครช่วยคุณ
 
 ```text
-
+ไม่มี
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+ไม่มี
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+เขียนโค้ด
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -316,10 +343,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
