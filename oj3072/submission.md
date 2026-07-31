@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-OJ3042 - หาร10
+
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-559264
+
 ```
 
 สถานะ OJ:
 
 ```text
-Pass
+Pass / Not Pass / Not Submit
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-30-60 minutes
+
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,16 +73,7 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
-โจทย์ต้องการให้รับค่ามาหนึ่งตัวเลข มาปัดลงให้เต็ม10แล้วแสดงค่าถอยหลังลดลงที่ละ10จนถึง0
 
-Input:
-รับค่าจำนวนเต็มหนึ่งจำนวน
-
-Output:
-ตัวเลขลดลงทีละ10จนถึง0จึงหยุด
-
-Constraints:
-ไม่สามารถรับจำนวนเต็มลบได้
 ```
 
 ---
@@ -102,11 +93,9 @@ Constraints:
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1: อ่านโจทย์ให้ละเอียดและทำความเช้าใจ
-Step 2: กำหนดตัวแปรรับค่าตัวเลข
-Step 3: ใช้ "// 10" เพื่อปัดค่าลงให้เป็นเลขเต็ม10และคูณเข้าไปใหม่
-Step 4: ใช้ while loop ลดลงทีละ10จนถึง0และlistไว้เก็บค่า
-Step 5: แสดงค่า
+Step 1:
+Step 2:
+Step 3:
 ```
 
 ---
@@ -126,7 +115,7 @@ Step 5: แสดงค่า
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-เหมือนกัน เพราะวิธีที่คิดไว้ตอนแรกแสดงค่าออกมาได้ตามที่ต้องการ
+
 ```
 
 ---
@@ -146,31 +135,31 @@ Step 5: แสดงค่า
 ทำไมเลือก case นี้:
 
 ```text
-เพราะอยากดูว่าจะแสดงค่าแบบปัดลงแล้วค่อยถอยไหม
+
 ```
 
 Input:
 
 ```text
-103
+
 ```
 
 Expected output:
 
 ```text
-100 90 80 70 60 50 40 30 20 10 0
+
 ```
 
 Actual output:
 
 ```text
-100 90 80 70 60 50 40 30 20 10 0
+
 ```
 
 Result:
 
 ```text
-Pass
+Pass / Not Pass
 ```
 
 ### Test Case 2
@@ -178,31 +167,31 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-เพราะคิดว่าถ้ากรณีนี้จะมีการแสดงผลออกมาไหม
+
 ```
 
 Input:
 
 ```text
-0
+
 ```
 
 Expected output:
 
 ```text
-0
+
 ```
 
 Actual output:
 
 ```text
-0
+
 ```
 
 Result:
 
 ```text
-Pass
+Pass / Not Pass
 ```
 
 ### Test Case 3
@@ -210,31 +199,31 @@ Pass
 ทำไมเลือก case นี้:
 
 ```text
-เพราะเป็นกรณีที่ไม่จำเป็นต้องปัดลง สามารถถอยได้เลย
+
 ```
 
 Input:
 
 ```text
-60
+
 ```
 
 Expected output:
 
 ```text
-60 50 40 30 20 10 0
+
 ```
 
 Actual output:
 
 ```text
-60 50 40 30 20 10 0
+
 ```
 
 Result:
 
 ```text
-Pass
+Pass / Not Pass
 ```
 
 ---
@@ -244,7 +233,7 @@ Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-No
+Yes / No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -262,7 +251,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-No
+Yes / No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -287,19 +276,19 @@ No
 ใครช่วยคุณ
 
 ```text
-ไม่มี
+
 ```
 
 เขาช่วยอะไร
 
 ```text
-ไม่มี
+
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-ทั้งหมด
+
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -316,10 +305,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | Yes |
-| I understand my final code. | Yes |
+| I wrote this submission in my own words. | |
+| I understand my final code. | |
 | I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | Yes |
-| I did not copy code from another person. | Yes |
-| If I received human help, I disclosed it in this file. | Yes |
-| I submitted the final code to the OJ by myself. | Yes |
+| I did not copy AI-generated text directly into this file. | |
+| I did not copy code from another person. | |
+| If I received human help, I disclosed it in this file. | |
+| I submitted the final code to the OJ by myself. | |
