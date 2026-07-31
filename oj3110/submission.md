@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+OJ3110 - สงคราม...ส่งด่วน
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+580053
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+30-60 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,16 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
+โจทย์ให้คำนวนค่าส่งพัสดุตามน้ำหนัก โดยแต่ละที่จะมีค่าธรรมเนียมเริ่มต้น ซึ่งเวลาคิดต้องบวกกับน้ำหนักที่คูณกับค่าธรรมเนียมน้ำหนักแต่ละต้นทางปลายทาง
 
+Input:
+รับค่าชื่อต้นทางกับปลายทางหนึ่งบรรทัด และอีกบรรทัดรับน้ำหนัก
+
+Output:
+แสดงผลราคาการส่งพัสดุ แต่ถ้าเส้นทางไม่มีที่กำหนดไว้ให้แสดงค่าError
+
+Constraints:
+รับค่าต้นทางและปลายทางได้แค่เป็นตัวพิมพ์ใหญ่
 ```
 
 ---
@@ -93,9 +102,10 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: อ่านโจทย์ให้ละเอียด
+Step 2: กำหนดตัวแปรรับค่าต้นทาง ปลายทาง และน้ำหนัก
+Step 3: ใช้ if-else สร้างเงื่อนไขแต่ละเส้นทางตามค่าในตาราง
+Step 4: แสดงผลเป็นทศนิยม2ตำแหน่ง
 ```
 
 ---
@@ -115,7 +125,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกัน เพราะแต่ละเส้นทางมีชื่อและราคาต่างกันเช็คแบบเงื่อนไขจะครอบคลุมที่สุด
 ```
 
 ---
@@ -135,31 +145,32 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะลองเส้นทางแรกในตาราง
 ```
 
 Input:
 
 ```text
-
+BKK CNX
+5
 ```
 
 Expected output:
 
 ```text
-
+160.00
 ```
 
 Actual output:
 
 ```text
-
+160.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +178,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะเป็นกรณีเขียนชื่อเส้นทางตัวพิมพ์เล็ก
 ```
 
 Input:
 
 ```text
-
+pkt cnx
+4
 ```
 
 Expected output:
 
 ```text
-
+270.00
 ```
 
 Actual output:
 
 ```text
-
+270.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +211,32 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะเป็นกรณีไม่มีชื่อเส้นทางนี้กำหนดไว้ในตาราง
 ```
 
 Input:
 
 ```text
-
+BKK UBP
+7
 ```
 
 Expected output:
 
 ```text
-
+Error
 ```
 
 Actual output:
 
 ```text
-
+Error
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +246,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +264,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -276,19 +289,19 @@ Yes / No
 ใครช่วยคุณ
 
 ```text
-
+ไม่มี
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+ไม่มี
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+ทั้งหมด
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -305,10 +318,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
