@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+OJ3072 - A-E-I-O-U
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+576266
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+30-60 minutes
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,16 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
+โจทย์ต้องการให้นับสระแบบแยกตัวจากข้อความที่รับเข้ามา ซึ่งจะแสดงค่าออกมาเพียงสระที่พบในข้อความนั้น
 
+Input:
+รับค่าstrข้อความเข้ามา
+
+Output:
+แสดงผลตามจำนวนสระที่เจอในข้อความ หากไม่พบสระไหนก็จะไม่แสดงผลนั้น
+
+Constraints:
+โจทย์กำหนดว่าสระตัวใหญ่ตัวเล็กถือว่าเป็นตัวเดียวกันจึงรับค่าเป็นแค่ตัวพิมพ์เล็กมาเลยจะเขียนเงื่อนไขง่าย
 ```
 
 ---
@@ -93,9 +102,11 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: อ่านโจทย์ให้ละเอียด
+Step 2: กำหนดตัวแปรรับข้อความ
+Step 3: สร้างตัวแปรใช้.count()ประจำสระแต่ละตัวเพื่อนับจำนวน
+Step 4: ใช้ .find() != -1 เพื่อเช็คว่าในข้อความมีสระนั้นหรือไม่
+Step 5: แสดงผลสระตามที่นับได้
 ```
 
 ---
@@ -115,7 +126,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกัน เพราะการใช้.count()นับจำนวนและ.find()แล้วไม่เท่ากับ-1แสดงว่ามีตำแหน่งอยู่ในข้อความ ก็จะคิดตอนแสดงผลได้ง่าย
 ```
 
 ---
@@ -135,31 +146,35 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะเป็นกรณีที่ตัวพิมพ์ใหญ่ผสมตัวพิมพ์เล็ก
 ```
 
 Input:
 
 ```text
-
+Nutpimol
 ```
 
 Expected output:
 
 ```text
-
+i : 1
+o : 1
+u : 1
 ```
 
 Actual output:
 
 ```text
-
+i : 1
+o : 1
+u : 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +182,33 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะเป็นกรณีตัวพิมพ์ใหญ่
 ```
 
 Input:
 
 ```text
-
+FROZEN
 ```
 
 Expected output:
 
 ```text
-
+e : 1
+o : 1
 ```
 
 Actual output:
 
 ```text
-
+e : 1
+o : 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +216,35 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะเป็นกรณีตัวพิมพ์เล็กทั้งหมด
 ```
 
 Input:
 
 ```text
-
+wonderful
 ```
 
 Expected output:
 
 ```text
-
+e : 1
+o : 1
+u : 1
 ```
 
 Actual output:
 
 ```text
-
+e : 1
+o : 1
+u : 1
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +254,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +272,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -276,19 +297,19 @@ Yes / No
 ใครช่วยคุณ
 
 ```text
-
+ไม่มี
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+ไม่มี
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+ทั้งหมด
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -305,10 +326,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
