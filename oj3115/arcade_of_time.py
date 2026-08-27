@@ -1,6 +1,4 @@
 """arcade"""
-
-
 def main():
     """arcade"""
     store, check = map(int, input().split())
@@ -24,6 +22,5 @@ def main():
         result.append(opened[times[i]])
 
     print(*result)
-
 
 main()
