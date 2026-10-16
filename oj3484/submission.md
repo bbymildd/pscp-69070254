@@ -15,25 +15,25 @@
 หมายเลข/ชื่อโจทย์ OJ:
 
 ```text
-
+OJ3484 - หุ่นยนต์เคาะเสียงกระเบื้อง
 ```
 
 OJ submission ID ถ้ามีการส่งแล้ว:
 
 ```text
-
+683715
 ```
 
 สถานะ OJ:
 
 ```text
-Pass / Not Pass / Not Submit
+Pass
 ```
 
 เวลาที่ใช้คิดและทำโจทย์ด้วยตนเอง:
 
 ```text
-
+1-3 hours
 ```
 
 เลือกหนึ่งข้อ:
@@ -73,7 +73,15 @@ More than 4 weeks
 ถ้ายังไม่เข้าใจโจทย์ทั้งหมด ให้เขียนสิ่งที่เข้าใจในตอนนี้ ความเข้าใจอาจยังไม่ครบหรืออาจผิดได้ แต่ต้องพยายามอธิบายอย่างจริงใจ
 
 ```text
+โจทย์ต้องการให้รวมกระเบื้องแผ่นที่เสียและรวมจุดที่เสียของแต่ละแถว,คอลัมน์ สุดท้ายรวมยอดแผ่นเสีย จุดที่เสีย ค่าปรับต่อจุดที่ต้องจ่าย
 
+Input:
+จำนวนแถวและคอลัมน์ ค่าปรับต่อจุด
+รับแถวและคอลัมน์เพื่อมาตรวจ
+
+Output:
+แสดงแถวและคอลัมน์เดิม เพิ่มรวมยอดจำนวนแผ่นเสียและจุดเสียแต่ละแถว,คอลัมน์ด้านข้าง
+บรรทัดสุดท้ายรวมยอดจำนวนแผ่นเสีย จุดที่เสียและค่าปรับที่ต้องจ่าย
 ```
 
 ---
@@ -93,9 +101,11 @@ More than 4 weeks
 สามารถเขียนเป็น pseudocode, flowchart idea หรือขั้นตอนความคิดได้
 
 ```text
-Step 1:
-Step 2:
-Step 3:
+Step 1: อ่านโจทย์อย่างละเอียด
+Step 2: สร้าง list เก็บข้อมูลแต่ละแถวและ loop ตรวจ
+Step 3: สร้าง list เก็บข้อมูลแต่ละคอลัมน์และ loop ตรวจ
+Step 4: รวมยอดแต่ละแถว,คอลัมน์ แผ่นที่แตกและจุดที่แตก
+Step 5: รวมทั้งหมดของแผ่นที่แตกและจุดที่แตก ค่าปรับที่ต้องจ่าย
 ```
 
 ---
@@ -115,7 +125,7 @@ Step 3:
 ห้ามคัดลอกคำอธิบายจากคนอื่น
 
 ```text
-
+เหมือนกัน เพราะเป็นวิธีเช็คที่ครอบคลุมทุกแถวและคอลัมน์
 ```
 
 ---
@@ -135,31 +145,47 @@ Step 3:
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะไม่มีกระเบื้องแตกเลย
 ```
 
 Input:
 
 ```text
-
+4 20
+0 0 0 0
+0 0 0 0
+0 0 0 0 
+0 0 0 0
 ```
 
 Expected output:
 
 ```text
-
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0.00
 ```
 
 Actual output:
 
 ```text
-
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 2
@@ -167,31 +193,44 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะมีกระเบื้องแตกบางแถว
 ```
 
 Input:
 
 ```text
-
+3 120
+1 0 4
+0 0 0
+2 5 1
 ```
 
 Expected output:
 
 ```text
-
+1 0 4 2 5
+0 0 0 0 0
+2 5 1 3 8
+2 1 2
+3 5 5
+5 13 1560.00
 ```
 
 Actual output:
 
 ```text
-
+1 0 4 2 5
+0 0 0 0 0
+2 5 1 3 8
+2 1 2
+3 5 5
+5 13 1560.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ### Test Case 3
@@ -199,31 +238,47 @@ Pass / Not Pass
 ทำไมเลือก case นี้:
 
 ```text
-
+เพราะมีกระเบื้องแตกทุกแถว
 ```
 
 Input:
 
 ```text
-
+4 78
+1 2 3 4
+5 6 4 3
+1 2 4 6
+4 2 1 1
 ```
 
 Expected output:
 
 ```text
-
+1 2 3 4 4 10
+5 6 4 3 4 18
+1 2 4 6 4 13
+4 2 1 1 4 8
+4 4 4 4
+11 12 12 14
+16 49 3822.00
 ```
 
 Actual output:
 
 ```text
-
+1 2 3 4 4 10
+5 6 4 3 4 18
+1 2 4 6 4 13
+4 2 1 1 4 8
+4 4 4 4
+11 12 12 14
+16 49 3822.00
 ```
 
 Result:
 
 ```text
-Pass / Not Pass
+Pass
 ```
 
 ---
@@ -233,7 +288,7 @@ Pass / Not Pass
 ใช้ AI กับโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช้ AI ต้องทำไฟล์นี้ด้วย:
@@ -251,7 +306,7 @@ ai_reflection.md
 ได้ถามเพื่อน TA ผู้สอน หรือบุคคลอื่นเพื่อขอความช่วยเหลือในโจทย์นี้หรือไม่
 
 ```text
-Yes / No
+No
 ```
 
 ถ้าใช่ ให้อธิบายสั้น ๆ ว่าได้รับความช่วยเหลือแบบใด
@@ -276,19 +331,19 @@ Yes / No
 ใครช่วยคุณ
 
 ```text
-
+ไม่มี
 ```
 
 เขาช่วยอะไร
 
 ```text
-
+ไม่มี
 ```
 
 คุณยังทำอะไรด้วยตนเอง
 
 ```text
-
+ทั้งหมด
 ```
 
 คุณคัดลอก code จากคนอื่นหรือไม่
@@ -305,10 +360,10 @@ No
 
 | Statement | Yes/No |
 |---|---|
-| I wrote this submission in my own words. | |
-| I understand my final code. | |
-| I recorded the real OJ status. | |
-| I did not copy AI-generated text directly into this file. | |
-| I did not copy code from another person. | |
-| If I received human help, I disclosed it in this file. | |
-| I submitted the final code to the OJ by myself. | |
+| I wrote this submission in my own words. | Yes |
+| I understand my final code. | Yes |
+| I recorded the real OJ status. | Yes |
+| I did not copy AI-generated text directly into this file. | Yes |
+| I did not copy code from another person. | Yes |
+| If I received human help, I disclosed it in this file. | Yes |
+| I submitted the final code to the OJ by myself. | Yes |
