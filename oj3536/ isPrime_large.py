@@ -1,0 +1,4 @@
+"""prime"""
+def main():
+    """prime"""
+    
